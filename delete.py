@@ -35,5 +35,5 @@ model.to('cuda:0')
 
 from transformers import pipeline
 unmasker = pipeline('fill-mask', model='dbmdz/bert-base-turkish-cased')
-print(unmasker("Dünyanın en iyi filmi: [MASK] filmidir."))
+print(unmasker("Türkiye'nin başkenti: [MASK]"))
 
